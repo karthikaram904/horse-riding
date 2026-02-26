@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse Riding Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/horse-riding-logo.png">
+  
+    <link rel="stylesheet" href="css/dashboard.css">
+ 
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <a class="navbar-brand logo-white" href="index.html"><img src="images/horse-white-logo.png"></a>
+    </div>
+    <div class="toggle-btn">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav>
+  <a href="dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+  <a href="trail-ride.html"><i class="fa fa-calendar-alt"></i> Trail Ride Schedule</a>
+  <a class="active" href="horse-assignment.html"><i class="fa fa-horse"></i> Horse Assignment</a>
+  <a href="rider-levels.html"><i class="fa fa-user-friends"></i> Rider Levels</a>
+  <a href="reports.html"><i class="fa fa-chart-line"></i> Reports</a>
+  <a href="logout.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</nav>
+
+    
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="container">
+    <h1>Horse Assignment</h1>
+
+    <table class="horse-assignment-table">
+        <thead>
+            <tr>
+                <th>Horse Name</th>
+                <th>Rider</th>
+                <th>Experience Level</th>
+                <th>Status</th>
+                <th>Time Slot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Horse Name">Spirit</td>
+                <td data-label="Rider">Arun Kumar</td>
+                <td data-label="Experience Level">Beginner</td>
+                <td data-label="Status">Assigned</td>
+                <td data-label="Time Slot">10:00 AM</td>
+            </tr>
+            <tr>
+                <td data-label="Horse Name">Blaze</td>
+                <td data-label="Rider">Priya Sharma</td>
+                <td data-label="Experience Level">Intermediate</td>
+                <td data-label="Status">Assigned</td>
+                <td data-label="Time Slot">11:00 AM</td>
+            </tr>
+            <tr>
+                <td data-label="Horse Name">Shadow</td>
+                <td data-label="Rider">Rahul Verma</td>
+                <td data-label="Experience Level">Advanced</td>
+                <td data-label="Status">Available</td>
+                <td data-label="Time Slot">12:00 PM</td>
+            </tr>
+            <tr>
+                <td data-label="Horse Name">Thunder</td>
+                <td data-label="Rider">-</td>
+                <td data-label="Experience Level">-</td>
+                <td data-label="Status">Available</td>
+                <td data-label="Time Slot">01:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+
+<!-- Toggle JS -->
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

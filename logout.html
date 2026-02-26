@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout - Horse Riding Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/horse-riding-logo.png">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <style>
+    /* Logout main content */
+    .logout-container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .logout-container h1 {
+        margin-bottom: 20px;
+        color: #e74c3c;
+    }
+
+    .logout-container p {
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .logout-container .btn-logout {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+
+    .logout-container .btn-logout:hover {
+        background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <a class="navbar-brand logo-white" href="index.html"><img src="images/horse-white-logo.png" alt="Logo"></a>
+    </div>
+    <div class="toggle-btn">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav>
+  <a href="dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+  <a href="trail-ride.html"><i class="fa fa-calendar-alt"></i> Trail Ride Schedule</a>
+  <a href="horse-assignment.html"><i class="fa fa-horse"></i> Horse Assignment</a>
+  <a href="rider-levels.html"><i class="fa fa-user-friends"></i> Rider Levels</a>
+  <a href="reports.html"><i class="fa fa-chart-line"></i> Reports</a>
+  <a class="active" href="logout.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="logout-container">
+        <h1>Logout</h1>
+        <p>You have been successfully logged out.</p>
+        <button class="btn-logout" onclick="location.href='login.html'">Login Again</button>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Toggle JS -->
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

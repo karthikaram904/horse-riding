@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse Riding Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/horse-riding-logo.png">
+  
+    <link rel="stylesheet" href="css/dashboard.css">
+ 
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <a class="navbar-brand logo-white" href="index.html"><img src="images/horse-white-logo.png"></a>
+    </div>
+    <div class="toggle-btn">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav>
+  <a class="active" href="dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+  <a href="trail-ride.html"><i class="fa fa-calendar-alt"></i> Trail Ride Schedule</a>
+  <a href="horse-assignment.html"><i class="fa fa-horse"></i> Horse Assignment</a>
+  <a href="rider-levels.html"><i class="fa fa-user-friends"></i> Rider Levels</a>
+  <a href="reports.html"><i class="fa fa-chart-line"></i> Reports</a>
+  <a href="logout.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</nav>
+
+    
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+  <h1>Welcome to Horse Riding Dashboard</h1>
+
+  <div class="dashboard-content">
+
+    <!-- LEFT SIDE -->
+    <div class="content-left">
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h4>120</h4>
+            <p>Total Riders</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <i class="fa fa-horse"></i>
+          <div>
+            <h4>32</h4>
+            <p>Total Horses</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <i class="fa fa-calendar-check"></i>
+          <div>
+            <h4>18</h4>
+            <p>Today Bookings</p>
+          </div>
+        </div>
+
+       
+      </div>
+
+      <!-- Cards -->
+      <div class="card-container">
+        <div class="card">
+          <h3>Next Ride</h3>
+          <p>Trail Ride #23 – 10:00 AM</p>
+        </div>
+        <div class="card">
+          <h3>Assigned Horses</h3>
+          <p>15 Horses Available</p>
+        </div>
+        <div class="card">
+          <h3>New Riders</h3>
+          <p>5 New Rider Registrations</p>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Rider</th>
+            <th>Experience Level</th>
+            <th>Assigned Horse</th>
+            <th>Time Slot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arun Kumar</td>
+            <td>Beginner</td>
+            <td>Spirit</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr>
+            <td>Priya Sharma</td>
+            <td>Intermediate</td>
+            <td>Blaze</td>
+            <td>11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Rahul Verma</td>
+            <td>Advanced</td>
+            <td>Shadow</td>
+            <td>12:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="content-right">
+
+      <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <ul>
+          <li><i class="fa fa-user-plus"></i> New rider "Sanjay" registered</li>
+          <li><i class="fa fa-horse"></i> Horse "Thunder" assigned to Rahul</li>
+          <li><i class="fa fa-calendar"></i> Trail Ride #25 scheduled</li>
+          <li><i class="fa fa-check-circle"></i> Payment received from Priya</li>
+        </ul>
+      </div>
+
+      <div class="upcoming-rides">
+        <h2>Upcoming Trail Rides</h2>
+        <div class="ride-card">
+          <h4>Morning Forest Trail</h4>
+          <p>20 Feb | 8:00 AM</p>
+        </div>
+        <div class="ride-card">
+          <h4>Sunset Beach Ride</h4>
+          <p>22 Feb | 5:30 PM</p>
+        </div>
+      </div>
+
+      <div class="notifications">
+        <h3>Notifications</h3>
+        <p>⚠ Horse “Blaze” requires medical check</p>
+        <p>✔ 3 payments confirmed</p>
+        <p>📅 Weekend ride almost full</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Toggle JS -->
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

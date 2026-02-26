@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse Riding Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/horse-riding-logo.png">
+  
+    <link rel="stylesheet" href="css/dashboard.css">
+ 
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <a class="navbar-brand logo-white" href="index.html"><img src="images/horse-white-logo.png"></a>
+    </div>
+    <div class="toggle-btn">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav>
+  <a href="dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+  <a class="active" href="trail-ride.html"><i class="fa fa-calendar-alt"></i> Trail Ride Schedule</a>
+  <a href="horse-assignment.html"><i class="fa fa-horse"></i> Horse Assignment</a>
+  <a href="rider-levels.html"><i class="fa fa-user-friends"></i> Rider Levels</a>
+  <a href="reports.html"><i class="fa fa-chart-line"></i> Reports</a>
+  <a href="logout.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</nav>
+
+    
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Welcome to Horse Riding Dashboard</h1>
+    <div class="card-container">
+      <div class="container">
+    <h1>Trail Ride Schedule</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Trail Name</th>
+          <th>Difficulty</th>
+          <th>Guide</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Day">Monday</td>
+          <td data-label="Time">08:00 AM - 12:00 PM</td>
+          <td data-label="Trail Name">Sunrise Trail</td>
+          <td data-label="Difficulty">Easy</td>
+          <td data-label="Guide">John</td>
+        </tr>
+        <tr>
+          <td data-label="Day">Tuesday</td>
+          <td data-label="Time">10:00 AM - 02:00 PM</td>
+          <td data-label="Trail Name">Mountain Loop</td>
+          <td data-label="Difficulty">Medium</td>
+          <td data-label="Guide">Sarah</td>
+        </tr>
+        <tr>
+          <td data-label="Day">Wednesday</td>
+          <td data-label="Time">09:00 AM - 01:00 PM</td>
+          <td data-label="Trail Name">River Path</td>
+          <td data-label="Difficulty">Easy</td>
+          <td data-label="Guide">Mike</td>
+        </tr>
+        <tr>
+          <td data-label="Day">Thursday</td>
+          <td data-label="Time">07:00 AM - 11:00 AM</td>
+          <td data-label="Trail Name">Forest Adventure</td>
+          <td data-label="Difficulty">Hard</td>
+          <td data-label="Guide">Emma</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* Schedule may change depending on weather conditions.</p>
+  </div>
+  </div>
+</div>
+
+<!-- Toggle JS -->
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
