@@ -8268,7 +8268,9 @@ h1, h2, h3, h4, h5,
       background: linear-gradient(45deg, #207dff 0%, #00bd55 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207dff', endColorstr='#00bd55', GradientType=1 ); }
     .hero-wrap.hero-wrap-2 .slider-text {
-      height: 400px; }
+      height: 400px;
+    text-align:center;
+    }
       .hero-wrap.hero-wrap-2 .slider-text h1 {
         font-weight: 400;
         font-size: 40px; }
