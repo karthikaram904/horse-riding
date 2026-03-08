@@ -11529,4 +11529,27 @@ display:none;
 .icon.image-popup {
   display: none !important;
 }
+@media (max-width:768px){
 
+#ftco-navbar{
+    position:relative;
+}
+
+#ftco-nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    padding:20px;
+    z-index:9999;
+}
+
+#ftco-nav .navbar-nav{
+    text-align:left;
+}
+
+#ftco-nav .nav-item{
+    margin:10px 0;
+}
+
+}
