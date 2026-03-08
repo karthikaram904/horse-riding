@@ -111,6 +111,45 @@
 .bot-link {
   display: inline-flex;
 }
+    .or-text{
+    text-align:center;
+    margin:15px 0;
+    font-size:14px;
+    color:#777;
+}
+
+.social-login{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.btn-social{
+    width:100%;
+    border:none;
+    padding:10px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.google{
+    background:#db4437;
+    color:#fff;
+}
+
+.facebook{
+    background:#1877f2;
+    color:#fff;
+}
+
+.btn-social:hover{
+    opacity:0.9;
+}
   </style>
 </head>
 <body>
@@ -122,6 +161,17 @@
       <input type="password" name="password" placeholder="Password" required>
       <a href="#">Forgot Password?</a>
       <button type="submit">Login</button>
+      <p class="or-text">OR</p>
+
+<div class="social-login">
+    <button class="btn-social google">
+        <i class="fab fa-google"></i> Login with Google
+    </button>
+
+    <button class="btn-social facebook">
+        <i class="fab fa-facebook-f"></i> Login with Facebook
+    </button>
+</div>
     </form>
     <p class="bot-link">New User?
     <a href="register.html" class="register-link">Register Here</a><p>
