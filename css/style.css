@@ -10623,10 +10623,11 @@ color:#ddd;
 }
 .h2-hero .h2-row {
   max-width: 100%;
-  text-align: left;
+  text-align: center;
+  justify-content:center;
   }
   .h2-hero .h2-actions {
- justify-content: start;
+ 
 }
 
 
